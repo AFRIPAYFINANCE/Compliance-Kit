@@ -1,2 +1,10 @@
-# Compliance-Kit
-Embeddable compliance tools for Stellar fintechs: Memo-hash generator, KYC tier checker, and regulatory utilities for compliance teams.
+# Stellar Compliance Toolkit
+> Automated compliance checks for anchors
+
+```javascript
+import { verifyMemoHash } from '@afripay/compliance-kit';
+
+const isValid = verifyMemoHash({
+  transaction: tx,
+  clientDomain: 'user.com'
+});
